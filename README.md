@@ -9,6 +9,15 @@ A multithreaded file search engine built with C++ using clean architecture and O
 - Runs the search in multiple threads to improve performance.
 - Stores and displays the results.
 
+## How it works
+
+1. main() calls ThreadedSearchEngine::search
+2. Gathers files with FileManager
+3. Divides them among N threads
+4. Each thread calls Searcher to look in files
+5. Results are stored safely using a mutex
+6. After joining threads, results are printed
+
 ## Usage
 
 To build the project using CMake:
