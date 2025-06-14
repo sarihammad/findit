@@ -1,0 +1,9 @@
+this
+is
+the
+third
+test
+file
+inside
+a
+subdirectory
