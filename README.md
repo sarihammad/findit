@@ -1,6 +1,6 @@
 # FindIt
 
-A multithreaded file search engine built with C++ using clean architecture and OOP.
+A multithreaded file search engine built with C++ with a focus on clean architecture, OOP and concurrency.
 
 ## Features
 
@@ -18,7 +18,7 @@ A multithreaded file search engine built with C++ using clean architecture and O
 5. Results are stored safely using a mutex
 6. After joining threads, results are printed
 
-## Usage
+## How to run
 
 To build the project using CMake:
 
@@ -29,9 +29,7 @@ To build the project using CMake:
    make
    ```
 
-This will produce the `FindIt` executable inside the `build` directory.
-
-After building the project with CMake, run the executable like this:
+Then run the executable like this:
 
 ```bash
 ./FindIt <directory> <keyword>
@@ -54,6 +52,4 @@ File: ../test/subdir/file3.txt
  Line: 5
 ```
 
-Replace `<directory>` with the path to the folder you want to search, and `<keyword>` with the word or phrase to look for.
-
-The program will output each file that contains matches, along with the line numbers where the keyword was found.
+Output each file that contains matches, along with the line numbers where the keyword was found.
